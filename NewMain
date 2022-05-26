@@ -1,4 +1,4 @@
-if game.PlaceId == 6872265039 then
+
 
  game.StarterGui:SetCore("SendNotification", {
 
