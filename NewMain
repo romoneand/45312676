@@ -14,7 +14,7 @@ wait(1)
 
 game.StarterGui:SetCore("SendNotification", {
 
-    Title = "Enjoy";
+    Title = "wait loading SCRIPT";
 
     Text = "make by romlnwza007#3770"; -- what the text says (ofc)
 
@@ -22,7 +22,7 @@ game.StarterGui:SetCore("SendNotification", {
 
 })
 
-wait(6)
+wait(5)
 
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
@@ -36,9 +36,9 @@ local Tab3 = Window:NewTab("Coming soon")
 
 local Tab1Section = Tab1:NewSection("Main")
 
-local Tab2Section = Tab2:NewSection("Weak things")
+local Tab2Section = Tab2:NewSection("Others hub")
 
-local Tab3Section = Tab3:NewSection("Coming soon")
+local Tab3Section = Tab3:NewSection("fuck")
 
 Tab1Section:NewButton("Vape v4", "Vape v4", function()
 
