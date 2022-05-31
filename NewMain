@@ -188,6 +188,28 @@ Tab3Section:NewButton("Nuker", "soon", function()
 
 end)
 
+Tab3Section:NewToggle("AntiVoid v2", "AntiVoid", function(state)
+    if state then
+local specialpos = (workspace.MapCFrames:FindFirstChild("center") and workspace.MapCFrames.center.Value.p == Vector3.new(77, 11, 35))
+        AntiVoidP = Instance.new("Part")
+        AntiVoidP.Parent = Workspace
+        AntiVoidP.Name = "AntiVoid"
+        AntiVoidP.CanCollide = true
+        AntiVoidP.Size = Vector3.new(2048, 1, 2048)
+        AntiVoidP.Anchored = true
+        AntiVoidP.Transparency = 0.55
+        AntiVoidP.Material = Enum.Material.Neon
+        AntiVoidP.Color = Color3.fromRGB(0, 106, 236)
+        AntiVoidP.Position = Vector3.new(0, 30.5, 0)
+    end
+end)
+
+Section:NewColorPicker("Color", "Add Antivoid color", Color3.fromRGB(255, 255, 255), function(col)
+    if AntiVoidP then
+        AntiVoidP.Color = (col)
+    end
+end)
+
 Tab1Section:NewButton("Anti void", "Anti void jumping ", function()
 
 local specialpos = (workspace.MapCFrames:FindFirstChild("center") and workspace.MapCFrames.center.Value.p == Vector3.new(77, 11, 35))
